@@ -47,8 +47,7 @@ Doplňte do níže uvedené tabulky význam zkratek, základní princip a typick
 | **MCU**                  |   microcontroller unit              | Integrovaný čip (CPU + RAM + Flash na jednom křemíku), deterministický běh bez OS / RTOS  | např. ESP32, PIC16LF1xxx, RP2040  |                                            |
 | **MPU**                  |   mikroprocesing unit               | Samostatný procesor vyžadující externí RAM a úložiště, často běží plnohodnotný OS (Linux) |                                   |                                            |
 | **Embedded**             |   vestavěny system                  |                                                                                           | Embedded PLC, embedded PC         | Bílá technika, bankomaty,
-plynové kotle... |
-
+plynové kotle... |  
 | **PLC**                  |programmate logic controller         | Průmyslový automat pro cyklické řízení procesů, vysoká odolnost, modulární/kompaktní      |                                   |                                            |
 | **iPC**                  |        industrial pc                |                                                                                           |                                   |                                            |
 | **Programovatelné relé** |                                     | Zjednodušené malé PLC pro méně náročné úlohy (nahrazuje časovače a relé)                  | např. Siemens LOGO!, Eaton easyE4 |                                            |
