@@ -69,7 +69,7 @@ Doplňte do níže uvedené tabulky význam zkratek, základní princip a typick
 Proč se u kritických aplikací v letectví (např. systém řízení letu Fly-by-Wire) nebo v jaderné energetice stále upřednostňují jednoduché deterministické mikrořadiče s několika desítkami kilobajtů paměti nebo obvody FPGA před moderními vícejádrovými gigahertzovými procesory s gigabajty RAM?
 
 *Vaše odpověď:*
-`...`
+`protože to bude daleko jednoduší,spolehlivější,předvidatelnější a bezpečnější`
 
 ---
 
@@ -80,28 +80,28 @@ Proč se u kritických aplikací v letectví (např. systém řízení letu Fly-
 1. **Typy pamětí v řídicích jednotkách:**
    - Doplňte porovnání pamětí z hlediska stálosti dat a rychlosti:
      - **RAM:** 
-	     - Je volatilní (energeticky závislá)? `[Ano / Ne]`
-	     - Rychlost zápisu: `...` 
-	     - K čemu se využívá v PLC/MCU: `...`
+	     - Je volatilní (energeticky závislá)? `[Ano ]`
+	     - Rychlost zápisu: `velnmi rychla` 
+	     - K čemu se využívá v PLC/MCU: `dočasna data,promene a pracovni data plc/mcu`
      - **Flash (ROM):** 
-	     - Je volatilní? `[Ano / Ne]`
-	     - K čemu se využívá v PLC/MCU: `...`
+	     - Je volatilní? `[NE]`
+	     - K čemu se využívá v PLC/MCU: `uloženi programu`
      - **EEPROM / NVRAM:** 
-	     - Je volatilní? `[Ano / Ne]`
-	     - K čemu se využívá v PLC/MCU: `...`
+	     - Je volatilní? `[Ne]`
+	     - K čemu se využívá v PLC/MCU: `trvale konfugurační udaje a parametry`
    - *Otázka z praxe:* Kam se v průmyslovém PLC ukládají aktuální provozní proměnné (např. čítače vyrobených kusů nebo motohodiny), aby se při nečekaném výpadku napájení neztratily (tzv. remanentní / retain data)?
      - Odpověď: `...`
 
 2. **Reálný čas a determinismus (Hard vs. Soft Real-Time):**
    - Proč pro reakci na nouzové zastavení lisu (požadavek reakce do 5 ms) použijeme PLC či mikrokontrolér s RTOS, a nikoliv běžné Raspberry Pi s operačním systémem Raspberry Pi OS (standardní Linux)?
-     - Odpověď: `...`
+     - Odpověď: `protože potřebujeme okamžity zastaveni a ne aby měl prodlevu zkrz vypočet a přemyšlení co má udelat`
 
 3. **Odolnost vůči vlivům prostředí a dešifrování kódu IP:**
    - Dešifrujte kód **IP68**:
-     - První číslice (6): `...`
-     - Druhá číslice (8): `...`
+     - První číslice (6): `pro prach`
+     - Druhá číslice (8): `proti vodě dlouhodobem ponoření`
    - Jaké minimální krytí IP musí mít rozváděč umístěný ve venkovním nekrytém prostředí, kde na něj přímo dopadá déšť a fouká polétavý prach?
-     - Označte správnou volbu: `[ ] IP20` | `[ ] IP44` | `[ ] IP65` | `[ ] IP00`
+     - Označte správnou volbu:| IP44
      - Zdůvodnění: `...`
 
 4. **Konstrukční rozdíly kancelářského PC vs. průmyslového iPC:**
