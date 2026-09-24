@@ -212,7 +212,7 @@ Jste v roli projektanta automatizace. Zákazník poptává zhotovení řízení 
 
 | Typ signálu | Požadavek aplikace (kusy) | Popis signálů v aplikaci | Počet po započtení rezervy (+20 %) |
 | :--- | :--- | :--- | :--- |
-| **Digitální vstup (DI)** | `...` | `...` | `...` |
+| **Digitální vstup (DI)** | `3× plovákový hladinový spínač (havarijní spodní hladina proti chodu nasucho, zapínací hladina, havarijní přepad,1× termistorové ochranné relé přehřátí motoru čerpadla` | `bezpotenciálový kontakt spínající 24 V DC` | `5` |
 | **Digitální výstup (DO) – reléový** | `...` | `...` | `...` |
 | **Digitální výstup (DO) – tranzistorový** | `...` | `...` | `...` |
 | **Analogový vstup (AI)** | `...` | `...` | `...` |
