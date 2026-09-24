@@ -213,10 +213,10 @@ Jste v roli projektanta automatizace. Zákazník poptává zhotovení řízení 
 | Typ signálu | Požadavek aplikace (kusy) | Popis signálů v aplikaci | Počet po započtení rezervy (+20 %) |
 | :--- | :--- | :--- | :--- |
 | **Digitální vstup (DI)** | `3× plovákový hladinový spínač (havarijní spodní hladina proti chodu nasucho, zapínací hladina, havarijní přepad,1× termistorové ochranné relé přehřátí motoru čerpadla` | `bezpotenciálový kontakt spínající 24 V DC` | `5` |
-| **Digitální výstup (DO) – reléový** | `...` | `...` | `...` |
-| **Digitální výstup (DO) – tranzistorový** | `...` | `...` | `...` |
-| **Analogový vstup (AI)** | `...` | `...` | `...` |
-| **Analogový výstup (AO)** | `...` | `...` | `...` |
+| **Digitální výstup (DO) – reléový** | `2× stykač pro spouštění motorů hlavního a záložního čerpadla` | `spínání cívky stykače 230 V AC / 0,5 A` | `3` |
+| **Digitální výstup (DO) – tranzistorový** | `1× opticko-akustický výstražný maják` | `napájení 24 V DC / 0,3 A` | `2` |
+| **Analogový vstup (AI)** | `1× hydrostatická ponorná sonda výšky hladiny v jímce` | `výstupní signál 4–20 mA` | `2` |
+| **Analogový výstup (AO)** | `1× řízení otáček frekvenčního měniče hlavního čerpadla` | `analogový signál 0–10 V` | `2` |
 
 2. **Výběr konkrétního hardwaru z katalogu výrobce:**
    - Navrhněte konkrétní přístroj z praxe (např. *Siemens LOGO! 24RCE + rozšiřující moduly*, *Siemens S7-1200 CPU 1212C/1214C DC/DC/RLY*, *Schneider Modicon M221*, *Eaton easyE4-UC-12RC1*, *WAGO 750*, případně průmyslový IoT kontrolér typu *UniPi Neuron*).
