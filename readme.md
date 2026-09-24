@@ -281,7 +281,7 @@ Jako vedoucí inženýr jste převzal projekt po nezkušeném brigádníkovi, kt
 
 | Oblast auditu | Zjištěná vada v amatérském návrhu | Fyzikální mechanismus selhání (proč to selže) | Následek pro stroj nebo obsluhu |
 | :--- | :--- | :--- | :--- |
-| **Elektromagnetická kompatibilita (EMC)** | `Arduino je blízko lisu a není dostatečně chráněné proti rušení od ventilů.	Při vypnutí ventilů vznikají elektrické špičky, které mohou rušit Arduino` | Napěťové špičky z indukční zátěže hydraulických ventilů způsobí restart MCU... | `Arduino se může resetovat/rušit.` |
+| **Elektromagnetická kompatibilita (EMC)** | `neni dostatečně chráněné proti elektrickému rušení od ventilů` | Napěťové špičky z indukční zátěže hydraulických ventilů způsobí restart MCU... | `Arduino se může resetovat/rušit.` |
 | **Mechanická a teplotní odolnost** | PLA plast a montáž na těleso lisu | `Teplo a vibrace namáhají plast. ` | `Krabička se může poškodit/deformovat. ` |
 | **Konektivita a propojení vodičů** | DuPont propojovací kabely bez aretace | `Vibrace uvolní kontakt“.` | `Vypadne signál.` |
 | **Funkční bezpečnost (Safety)** | Nouzový stop řešený softwarově v čipu | `Selže Arduino/program. ` | `Nouzové zastavení nemusí fungovat. ` |
