@@ -102,20 +102,21 @@ Proč se u kritických aplikací v letectví (např. systém řízení letu Fly-
      - Druhá číslice (8): `proti vodě dlouhodobem ponoření`
    - Jaké minimální krytí IP musí mít rozváděč umístěný ve venkovním nekrytém prostředí, kde na něj přímo dopadá déšť a fouká polétavý prach?
      - Označte správnou volbu:| IP44
-     - Zdůvodnění: `...`
+     - Zdůvodnění: `je odolny proti proti vodě ze všech stran tim padem chrani proti děšti`
 
 4. **Konstrukční rozdíly kancelářského PC vs. průmyslového iPC:**
    - Vyberte a doplňte hlavní odlišnosti:
      - *Chlazení:* 
-	     - Kancelářské PC: `...` 
-	     - vs. iPC: `...`
+	     - Kancelářské PC: `neustale chlazeni,lepší cena,snadna vymena komponentu` 
+	     - vs. iPC: `,robustnější chlazeni,často bez ventilatoru`
      - *Napájecí napětí a filtrace:* 
-	     - Kancelářské PC: `...` 
-	     - vs. iPC: `...`
-     - *Odolnost proti otřesům a vibracím:* `...`
+	     - Kancelářské PC: `bežne ze sítě,meší odolnost protu rušení` 
+	     - vs. iPC: `prumyslove napajeni a vysoka odolnost proti rušeni a vibracim`
+     - *Odolnost proti otřesům a vibracím:* pc:`nizká`
+     - vs, ipc:vysoka odolnost
      - *Způsob montáže:* 
-	     - Kancelářské PC: na stůl/pod stůl 
-	     - vs. iPC: `...`
+	     - Kancelářské PC: na stůl/pod stůl: pro jednoduchy vymenu komponentu,ke stolu
+	     - vs. iPC: `do rozvadeče`
 
 > :key: **Vysvětlení pojmů a odborné zdroje:**
 > - **Determinismus (Real-Time):** Vlastnost systému, která zaručuje, že odezva na vstupní událost proběhne vždy v přesně definovaném a předvídatelném čase (deadline). V *Hard Real-Time* systémech znamená nedodržení časového limitu fatální havárii celého procesu. 
