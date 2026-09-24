@@ -183,6 +183,7 @@ Co je to tzv. **SoftPLC** a jak umožňuje průmyslovému PC (iPC) kombinovat v�
 
 *Vaše odpověď:*
 `softplc=software plc,beži na ipc; umožnuje to pomoci toho že real time vrstva zjistí, že plc dostane proces v předvidatelnem čase tim se omezuje vliv na bežnych uloh na os ktere by to jinak mohli zpodit`
+
 ---
 
 ### 4. Návrh a konfigurace řídicí jednotky pro čerpací stanici
