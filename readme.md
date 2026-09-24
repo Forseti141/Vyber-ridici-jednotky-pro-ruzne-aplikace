@@ -221,22 +221,22 @@ Jste v roli projektanta automatizace. Zákazník poptává zhotovení řízení 
 2. **Výběr konkrétního hardwaru z katalogu výrobce:**
    - Navrhněte konkrétní přístroj z praxe (např. *Siemens LOGO! 24RCE + rozšiřující moduly*, *Siemens S7-1200 CPU 1212C/1214C DC/DC/RLY*, *Schneider Modicon M221*, *Eaton easyE4-UC-12RC1*, *WAGO 750*, případně průmyslový IoT kontrolér typu *UniPi Neuron*).
    - Uveďte:
-     - Výrobce a přesný model CPU: `...`
-     - Objednací kód (Part Number / Order Code): `...`
+     - Výrobce a přesný model CPU: `Siemens S7-1200 CPU 1212C/1214C DC/DC/RLY`
+     - Objednací kód (Part Number / Order Code): `6ES7 214-1HG40-0XB0`
      - Rozšiřující moduly (pokud jsou nutné pro AI 4–20 mA nebo AO 0–10 V): `...`
-     - Napájecí napětí zvolené jednotky: `...`
-     - Jak je vyřešeno odesílání dat na dispečink: `...`
-     - Odkaz na technický list (datasheet): `...`
-     - Odkazy na další použité zdroje: `...`
+     - Napájecí napětí zvolené jednotky: `24V`
+     - Jak je vyřešeno odesílání dat na dispečink: `ethernet`
+     - Odkaz na technický list (datasheet): `https://support.industry.siemens.com/teddatasheet/?caller=SIOS&format=pdf&language=en&mlfbs=6ES7214-1HG40-0XB0&utm_source=chatgpt.com`
+     - Odkazy na další použité zdroje: `https://dreamland-plc.com/cs/1391479/siemens/cpu-1212c/6es7212-1be40-0xb0-novy-bez-obalu?gad_source=1&gad_campaignid=21904795572&gbraid=0AAAAAp0Rp2lcRxca_aw-xyvZHLw3YLfQ7&gclid=EAIaIQobChMIhf-F256HlwMVXVNBAh07hxq5EAAYASAAEgIeOPD_BwE`
 
 3. **Technické ověření z datasheetu:**
-   - Zvládá zvolená jednotka garantovaný provoz při -20 °C? Doložte údaj z datasheetu: `...`
-   - Jakým způsobem spínáte cívku stykače 230 V AC (reléový výstup jednotky přímo, nebo přes pomocné mezilehlé relé)? Zdůvodněte: `...`
+   - Zvládá zvolená jednotka garantovaný provoz při -20 °C? Doložte údaj z datasheetu: `its minimum`
+   - Jakým způsobem spínáte cívku stykače 230 V AC (reléový výstup jednotky přímo, nebo přes pomocné mezilehlé relé)? Zdůvodněte: `přímo protože má digitalni vystupy`
 
 4. **Krytí rozváděče:**
    - Jaké minimální krytí **IP skříně** zvolíte? Jak v rozváděči zajistíte provoz v mrazech -20 °C a v letních vedrech?
-     - Zvolené krytí rozváděče: `...`
-     - Teplotní management skříně: `...`
+     - Zvolené krytí rozváděče: `ip66`
+     - Teplotní management skříně: `použít komponenty s odpovídajícím teplotním rozsahem. Proti kondenzaci bych instaloval protikondenzační topné těleso s termostatem. Topné těleso musí být oddělené od citlivých komponent a nesmí způsobit nadměrné oteplení`
 
 > **Kritéria hodnocení úlohy 4 (bodování a známka):**
 > - :star: **Správnost I/O bilance a dimenzování (30 %):** Správný součet všech signálů, korektní rozlišení reléových vs. tranzistorových výstupů a správné započtení rezervy min. 20 %.
@@ -258,7 +258,8 @@ Jste v roli projektanta automatizace. Zákazník poptává zhotovení řízení 
 Proč se u čerpadel v čistírnách odpadních vod a jímkách striktně upřednostňuje měření hladiny pomocí proudového signálu 4–20 mA před napěťovým signálem 0–10 V a proč se do jímky nepoužívá ultrazvukový senzor, pokud v ní vzniká hustá pěna?
 
 *Vaše odpověď:*
-`...`
+`kvuli odolnosti proti rušení,kvuli možnosti dlouhých kabelu bez ztraty napětí a ultrazvuk se nepoužíva při huste pěně kvuli tomu že část ultrazvukové energie se na pěně rozptýlí nebo pohltí a
+senzor nemusí dostat dostatečně silný a jednoznačný odraz`
 
 ---
 
