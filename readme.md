@@ -48,8 +48,8 @@ Doplňte do níže uvedené tabulky význam zkratek, základní princip a typick
 | **MPU**                     |mikroprocesing unit                 | Samostatný procesor vyžadující externí RAM a úložiště, zpravidla běží plnohodnotný OS (Linux)        |  GY-521,gy-9250                            |řízení pc a el.zařízeni,zpracovani dat  |
 | **Embedded**             |       vestavěny system              |  má os,cpu,je vykoněší než mcu ale potřebuje vice komponentu než mpu,potřebuje externi pamet a ram     | Embedded PLC, Embedded PC                   | Bílá technika, bankomaty, regulace kotlů |
 | **PLC**                  |programmate logic controller         | Průmyslový automat pro cyklické deterministické řízení procesů, vysoká odolnost, modulární/kompaktní |  siemens simatic s7-1200 nebo s7-1500       |  vyrobni linky,řízení stroju,robotu a stroju |
-| **iPC**                  |         industrial pc                 | pro prumyslovy prostředí,vhodnypro naročné ulohy,potřeuje os je podobny pc ale odolnější             |                                             |                                          |
-| **Programovatelné relé** |         prostě rele                    | Zjednodušené kompaktní PLC pro méně náročné úlohy, nahrazuje časovací relé a stykačové kombinace     |                                             |                                          |
+| **iPC**                  |         industrial pc                 | pro prumyslovy prostředí,vhodnypro naročné ulohy,potřeuje os je podobny pc ale odolnější             | siemns simatic ipc,advanced ipc          | sběr a zpracovani dat,řizeni a procesu       |
+| **Programovatelné relé** |         prostě rele                    | Zjednodušené kompaktní PLC pro méně náročné úlohy, nahrazuje časovací relé a stykačové kombinace     | siemens logo,omon 2en                   |  řízeni automatizace v domacnostech             |
 
 > :key: **Vysvětlení pojmů a odborné zdroje:**
 > - **SoC (System on Chip):** Integrovaný obvod sdružující všechny klíčové elektronické obvody a komponenty celého počítače či elektronického systému na jediném křemíkovém čipu. 
