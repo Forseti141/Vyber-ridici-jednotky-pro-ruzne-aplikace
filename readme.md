@@ -281,10 +281,10 @@ Jako vedoucí inženýr jste převzal projekt po nezkušeném brigádníkovi, kt
 
 | Oblast auditu | Zjištěná vada v amatérském návrhu | Fyzikální mechanismus selhání (proč to selže) | Následek pro stroj nebo obsluhu |
 | :--- | :--- | :--- | :--- |
-| **Elektromagnetická kompatibilita (EMC)** | `neni dostatečně chráněné proti elektrickému rušení od ventilů` | Napěťové špičky z indukční zátěže hydraulických ventilů způsobí restart MCU... | `Arduino se může resetovat/rušit.` |
-| **Mechanická a teplotní odolnost** | PLA plast a montáž na těleso lisu | `Teplo a vibrace namáhají plast. ` | `Krabička se může poškodit/deformovat. ` |
-| **Konektivita a propojení vodičů** | DuPont propojovací kabely bez aretace | `Vibrace uvolní kontakt“.` | `Vypadne signál.` |
-| **Funkční bezpečnost (Safety)** | Nouzový stop řešený softwarově v čipu | `Selže Arduino/program. ` | `Nouzové zastavení nemusí fungovat. ` |
+| **Elektromagnetická kompatibilita (EMC)** | `Řídicí elektronika není dostatečně chráněna proti rušení od indukčních cívek hydraulických ventilů` | Napěťové špičky z indukční zátěže hydraulických ventilů způsobí restart MCU... | `Arduino může resetovat, ztratit řízení nebo vydat chybný povel; hydraulický systém může přejít do nežádoucího stavu.` |
+| **Mechanická a teplotní odolnost** | PLA plast a montáž na těleso lisu | `Vibrace mohou uvolnit mechanické spoje a konektory. Zvýšená teplota může snížit pevnost PLA a způsobit jeho deformaci. ` | `Poškození nebo deformace krytu může odhalit elektrické části, způsobit poruchu elektroniky nebo ztrátu řízení stroje.. ` |
+| **Konektivita a propojení vodičů** | DuPont propojovací kabely bez aretace | `Vibrace mohou způsobit uvolnění kontaktu, zvýšení přechodového odporu nebo přerušení vodiče.“.` | `Dojde ke ztrátě řídicího signálu a ventil může zůstat v nežádoucím stavu nebo přestat reagovat..` |
+| **Funkční bezpečnost (Safety)** | Nouzový stop řešený softwarově v čipu | `Při zamrznutí MCU, chybě programu, resetu nebo poruše vstupu nemusí být přerušení zpracováno a výstupy nemusí přejít do bezpečného stavu.. ` | `Nouzové zastavení nemusí fungovat a hydraulický pohyb může pokračovat, což může vést k vážnému zranění obsluhy.. ` |
 
 2. **Návrh profesionálního nápravného řešení:**
    - Navrhněte, jakými certifikovanými průmyslovými komponenty tento celek nahradíte při zachování minimálního rozpočtu:
