@@ -288,9 +288,17 @@ Jako vedoucí inženýr jste převzal projekt po nezkušeném brigádníkovi, kt
 
 2. **Návrh profesionálního nápravného řešení:**
    - Navrhněte, jakými certifikovanými průmyslovými komponenty tento celek nahradíte při zachování minimálního rozpočtu:
-     - *Náhrada řídicí jednotky:* `...` *(např. certifikované průmyslové programovatelné relé s montáží na DIN lištu a krytím)*
-     - *Náhrada napájecího zdroje:* `...` *(např. stabilizovaný průmyslový zdroj 24 V DC na DIN lištu s ochranou proti přepětí)*
-     - *Způsob zapojení bezpečnostního okruhu (Safety):* Jak musí být podle norem zapojeno tlačítko Emergency Stop (E-Stop)? Smí být spoléháno pouze na software mikrokontroléru? Zdůvodněte: `...`
+     - *Náhrada řídicí jednotky:* `Siemens LOGO! 12/24RCE (6ED1052-1MD08-0BA2)` *(např. certifikované průmyslové programovatelné relé s montáží na DIN lištu a krytím)*
+     - *Náhrada napájecího zdroje:* `Siemens SITOP PSU100C 24 V DC / 2,5 A` *(např. stabilizovaný průmyslový zdroj 24 V DC na DIN lištu s ochranou proti přepětí)*
+     - *Způsob zapojení bezpečnostního okruhu (Safety):* Jak musí být podle norem zapojeno tlačítko Emergency Stop (E-Stop)? Smí být spoléháno pouze na software mikrokontroléru? Zdůvodněte: `→ Pilz PNOZ X2P 24VAC/DC – bezpečnostní relé pro monitorování E-Stopu, s možností 1-/2kanálového zapojení a dvěma bezpečnostními spínacími kontakty. Je určeno přímo pro bezpečnostní funkce, jako je nouzové zastavení a ochrana dveří. 
+P
+Pilz
+
+E-Stop tlačítko by mělo mít dva nezávislé rozpínací kontakty (NC). Oba kanály se vedou do bezpečnostního relé. Bezpečnostní relé následně ovládá bezpečnostní odpojení energie k nebezpečnému pohybu. Bezpečnostní relé používá redundantní a samočinně kontrolované zapojení, takže porucha jednoho prvku nemá jednoduše vést ke ztrátě bezpečnostní funkce. 
+P
+Pilz
+
+Důvod: Běžný PLC/mikrokontrolér může selhat například zamrznutím programu, poruchou výstupu nebo softwarem. Proto nesmí být E-Stop pouze vstupem do programu typu:`
 
 > **Kritéria hodnocení úlohy 5 (bodování a známka):**
 > - :star: **Odborná úroveň identifikace závad (35 %):** Přesná technická terminologie (např. elektromagnetická indukce, absence odrušovacích varistorů, skelný přechod PLA plastu při 60 °C, studené spoje a vyklepání konektorů vibracemi).
